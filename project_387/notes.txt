@@ -1,0 +1,24 @@
+problem 387
+
+for 2011 to be a right truncatable harshad prime
+201 must be a right truncatable harshad prime
+
+but if we start from 1 and work our way up
+ *we already know 201 is right truncatable harshad prime*
+
+so we take 201 and test
+ 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019
+to see if they're divisible by the sum of their digits
+which ever ones are, *must be* harshad primes
+
+add them to the array
+get the next un tested number
+append a digit
+continue until the numbers + a digit > 10^15
+
+then test for primality and strong primality
+
+
+Generate all right trucatable harshad numbers first
+Then figure out which of those are "strong harshad numbers" (which ones when divided by the sum of their digits results in a prime qutotient)
+Then figure out which of those are + 1 right diget are prime (need to implement primality check algorithm)
