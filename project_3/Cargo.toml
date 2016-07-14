@@ -4,3 +4,4 @@ version = "0.1.0"
 authors = ["David D. <fizz125@users.noreply.github.com>"]
 
 [dependencies]
+libprime = { path = "../libprime" }

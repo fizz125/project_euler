@@ -1,3 +1,5 @@
+extern crate libprime;
+
 fn main() {
 
 //	let mut primes: Vec<u64> = vec![2, 3, 5, 7];
@@ -10,7 +12,7 @@ fn main() {
 	println!("val = {}", val);
 	println!("max pos prime factor = {}", max_pos_factor);
 
-	let primes: Vec<u64> = seive(max_pos_factor as usize);
+	let primes: Vec<u64> = libprime::seive(max_pos_factor as usize);
 
 /*
 	while max_pos_factor > *primes.last().unwrap() {
